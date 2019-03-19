@@ -34,11 +34,14 @@
 </body>
 </html>
 
-<script>
-    $("li.even").attr("type","square");
-    $("li").eq(6).height(10);
-    $("li.odd").filter(function(){
-        $(this).text($(this).text().toUpperCase());
-    })
-    $("li#madrid").append($("li#murcia"))
+<script type="application/javascript">
+    $(document).ready(function(){
+        $("li.even").attr("type","square");
+        $("li").eq(6).height(10);
+        $("li.odd").filter(function(){
+            $(this).text($(this).text().toUpperCase());
+        })
+        $("li#madrid").append($("li#murcia"));
+    });
+    
 </script>
